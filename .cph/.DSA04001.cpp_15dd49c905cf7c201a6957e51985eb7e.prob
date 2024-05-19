@@ -1,0 +1,1 @@
+{"name":"Local: DSA04001","url":"h:\\Code\\DSA\\DSA04001.cpp","tests":[{"id":1715008541344,"input":"2\n\n2 3\n\n4 2","output":"8\n16"}],"interactive":false,"memoryLimit":1024,"timeLimit":3000,"srcPath":"h:\\Code\\DSA\\DSA04001.cpp","group":"local","local":true}
