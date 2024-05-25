@@ -3,20 +3,20 @@
 int main(){
     int t;
     std::cin >> t;
-    int cnt = 1;
-    std::vector<std::pair<int>> v;  
-    for(int i = 0; i < t; i++){
-        int x, y;
-        std::cin >> x >> y;
-        if(cnt < x){
-            p.insert({cnt, x});
+    std::cin.ignore();
+    std::vector<std::pair<int, int>> v;  
+    for(int i = 1; i <= t; i++){
+        std::string s, num;
+        getline(std::cin, s);
+        std::stringstream ss(s);
+        while(ss >> num){
+            if(std::stoi(num) > i){
+                v.push_back({i, std::stoi(num)});
+            }
         }
-        if(cnt < y){
-            p.insert({cnt, y});
-        }
-        cnt++;
+        
     }
-    for(auto x : p){
+    for(auto x : v){
         std::cout << x.first << " " << x.second << std::endl;
     }
 }
